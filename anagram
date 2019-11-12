@@ -17,7 +17,8 @@ function areAnagram(str1, str2) {
     }
   }
 }
-console.log(areAnagram('test', 'ttse'));
+console.log(areAnagram('abc', 'bca'));
+console.log(areAnagram('abc', 'cde'));
 
 
 
