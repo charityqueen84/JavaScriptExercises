@@ -1,0 +1,15 @@
+//This is incomplete and doesn't check for upper/lowercase and spaces
+
+function isPalindrome(word) {
+  var revWord  =  word.split('').reverse().join('');
+  var revWordNoSpaces = revWord.filter(function(noSpace){
+    return revWordNoSpaces;
+  });
+      
+  if (word === revWordNoSpaces){
+    return true;
+  }
+  return false;
+  
+}
+console.log(isPalindrome('chicken'));
