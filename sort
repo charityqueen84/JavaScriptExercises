@@ -1,0 +1,10 @@
+var sortAlphabets = function(text) {
+    return text.split('').sort().join('');
+};
+console.log(sortAlphabets('cash'));
+
+//Convert string to array (split)
+//Sort array (sort)
+//Convert back array to string (join)
+
+//output = "achs"
