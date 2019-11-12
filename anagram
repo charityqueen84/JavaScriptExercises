@@ -20,6 +20,10 @@ function areAnagram(str1, str2) {
 console.log(areAnagram('abc', 'bca'));
 console.log(areAnagram('abc', 'cde'));
 
+//split turns a string into an array
+//sort sorts alphabetically
+//join turns an array back into a string
+
 
 
 
