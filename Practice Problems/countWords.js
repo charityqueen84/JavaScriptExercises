@@ -12,7 +12,7 @@ function countWords(sentence) {
     var words = sentence.split(' '); //saving the whole string into separate words with a comma in between each word
     //to take out extra spaces
     var next = words.filter(function(noSpace)  { //Filtering out anything that is a blank space. This could also be written as words.filter(noSpace => {
-        return noSpace !== ''; //It is an array containing all the array elements that pass the test. 
+        return noSpace !== ''; //It is an array containing all the array elements that pass the test. //this has to be '' and not ' '
         //If no elements pass the test, it returns an empty array. If all elements pass the test, the array is returned with the elements.
     });   
     return next.length; //Returning next.length here instead of words.length. 
