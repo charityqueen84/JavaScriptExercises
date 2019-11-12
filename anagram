@@ -1,0 +1,30 @@
+
+
+//get lengths of both strings and save to variables 
+
+function areAnagram(str1, str2) {
+  var long1 = str1.length;
+  var long2 = str2.length;
+  if (long1 !== long2){
+    return false;
+  }else{
+    str1Sort = str1.sort();
+    str2Sort = str2.sort();
+    for (var i = 1; i < long1; i++) {
+      if (str1Sort[i] !== str2Sort[i]) {
+        return false;
+      }
+      return true;
+    }
+  }
+}
+console.log(areAnagram('test', 'test'));
+
+
+//if the lengths of both strings don't equal, it's false
+
+//sort both strings
+
+//compare sorted strings with a for loop w/ if statement
+//I need to change array back into string. Because in the console.log, if I enter two arrays 
+//['t', 'e', 's', 't'], ['t', 'e', 's', 't'], it works. But if I enter a string, it doesn't. 
