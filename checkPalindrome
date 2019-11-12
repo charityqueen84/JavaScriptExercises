@@ -2,7 +2,11 @@
 
 function check_Palindrome(str_entry){
 // Change the string into lower case and remove  all non-alphanumeric characters
-   var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');
+   var cstr = str_entry.toLowerCase().replace(/[^a-zA-Z0-9]+/g,'');     //instead of my var revWord = word.split('').reverse().join(' '); 
+   
+   //This one is replacing anything that's not a-z or A-Z or 0-9 and doing a global match, and looking for empty spaces.
+   //The g modifier is used to perform a global match (find all matches rather than stopping after the first match).
+	
 	var ccount = 0;
 // Check whether the string is empty or not
 	if(cstr==="") {
