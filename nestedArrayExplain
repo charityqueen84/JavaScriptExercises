@@ -1,0 +1,19 @@
+
+function sumNested(arr) {
+    var sum = 0;
+    for (var i = 0; i < arr.length; i++) {
+      
+        if (typeof arr[i] == 'number') { //if it's a number, sum + the number
+        sum += arr[i];
+          console.log('Number ' + arr[i])
+        }else if (arr[i] instanceof Array) {  //if it's an array, we're using recursion.
+          sum += sumNested(arr[i]);
+          console.log(arr[i]); //prints array I'm currently working with
+          console.log('Moving on to ' + sum)
+        } 
+    }
+  console.log('Adding ' + arr + ' is ' + sum)
+    return sum; //returns total sum 
+  
+}
+console.log('The total is ' + sumNested([1,[2,[4, [5, [6]], 3]]]));
