@@ -16,9 +16,9 @@ fizzBuzz(15);  // returns  ‘1, 2, 3fizz, 4, 5buzz, 6fizz, 7, 8, 9fizz, 10buzz,
  function fizzBuzz(n) {
      for (let i = 1; i <= n ; i++){
      if (n <= 0) {
-         return ' ';
+        console.log(' ');
     }else if ((i % 3 == 0) && (i % 5 == 0)){
-            console.log('fizzbuzz');
+        console.log('fizzbuzz');
      }else if (i % 3 == 0) {
          console.log('fizz');
      }else if (i % 5 == 0) {

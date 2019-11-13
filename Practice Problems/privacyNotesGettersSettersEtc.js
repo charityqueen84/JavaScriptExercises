@@ -118,7 +118,7 @@ const robot = {
 
 const person = {
   _age: 37,
-  set age(newAge){
+  setAge(newAge){
     if (typeof newAge === 'number'){
       this._age = newAge;
     } else {
@@ -154,7 +154,7 @@ const robot = {
   _model: '1E78V2',
   _energyLevel: 100,
   _numOfSensors: 15,
-  get numOfSensors(){
+  getnumOfSensors(){
     if(typeof this._numOfSensors === 'number'){
       return this._numOfSensors;
     } else {
