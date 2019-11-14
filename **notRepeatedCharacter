@@ -1,0 +1,25 @@
+//Write a JavaScript function to find the first not repeated character.
+
+function find_FirstNotRepeatedChar(str) {
+  var arra1 = str.split(''); //changing string to array
+  var result = ''; //empty string
+  var ctr = 0; //starting the count 
+ 
+  for (var x = 0; x < arra1.length; x++) { //looping through 
+    ctr = 0;
+ 
+    for (var y = 0; y < arra1.length; y++)  //creating another loop so we have 2 indexes to compare 
+    {
+      if (arra1[x] === arra1[y]) { //if index at array1 equals index at array2
+        ctr+= 1; //add it to the count
+      }
+    }
+ 
+    if (ctr < 2) {  //if the count is only one, this is the first not repeated character 
+      result = arra1[x]; //saving that character to the empty string
+      break; //end it here so it doesn't keep going 
+    }
+  }
+  return result;
+}
+console.log(find_FirstNotRepeatedChar('abacddbec'));
