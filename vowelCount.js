@@ -13,7 +13,7 @@ function vowels(input) {
   var vow = 'aeiouAEIOU'
   var vowSum=0 //initializing the sum
   for (var i=0; i <=input.length; i++) { //looping over the string and as long as it's less than the length of the input, keep going
-    if (vow.indexOf(input[i]) !==-1) { //indexOf() returns the index within the string (i within in input)
+    if (vow.indexOf(input[i]) !==-1) { //indexOf() returns the index within the string (i within in input). Returns -1 if none found.
       vowSum +=1 //adding up the number of vowels
     }
     return vowSum //returning the total number of vowels after adding up
