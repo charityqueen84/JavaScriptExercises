@@ -9,14 +9,14 @@ Expected output: 2
 function char_count(str, letter) 
 {
  var letter_Count = 0;
- for (var position = 0; position < str.length; position++) 
+ for (var position = 0; position < str.length; position++) //looping over the string
  {
-    if (str.charAt(position) == letter) 
+    if (str.charAt(position) == letter) //if whatever position in the string is the same as the letter
       {
-      letter_Count += 1;
+      letter_Count += 1; //then add it to the letter count
       }
   }
-  return letter_Count;
+  return letter_Count; //returning the total count 
 }
 
 console.log(char_count('w3resource.com', 'o'));
