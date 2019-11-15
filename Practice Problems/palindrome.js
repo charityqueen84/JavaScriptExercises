@@ -8,4 +8,5 @@ function isPalindrome(word) {
   }
   console.log(isPalindrome('chicken'));
 
-  
+  //split array loop through filter out then reverse and join 
+

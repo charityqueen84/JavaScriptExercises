@@ -1,9 +1,11 @@
 function isPalindrome(word) {
-    var revWord  =  word.split('').reverse().join('');   
+    var wordArray  =  word.split('');
+    var pal = wordArray.filter(function(noSpace) {
+        return noSpace !== '';
+    });
+    return wordArray;
+}
     if (word === revWord){
       return true;
     }
-    return false;
-    
-  }
-  console.log(isPalindrome('chicken'));
+    return false; 
